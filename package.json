@@ -1,0 +1,39 @@
+{
+  "name": "context-menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install -g typescript webpack typings babel webpack-dev-server",
+    "link": "npm link typescript webpack babel",
+    "update": "npm update",
+    "tree": "tree -I 'node_modules'",
+    "ts-build": "tsc -p tsconfig.json",
+    "dev-build": "webpack-dev-server --debug --display-modules --progress --watch --config webpack.dev.config.js",
+    "build": "webpack --display-modules --progress",
+    "clean": "rm -f ./lib/*",
+    "test": "open localhost:8080/demo/test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ikagaka/ContextMenu.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ikagaka/ContextMenu/issues"
+  },
+  "homepage": "https://github.com/Ikagaka/ContextMenu#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "empower": "^1.2.1",
+    "power-assert-formatter": "^1.4.0",
+    "qunitjs": "^2.0.0-rc1",
+    "ts-loader": "^0.8.2",
+    "webpack-espower-loader": "^1.0.1"
+  },
+  "dependencies": {
+    "events": "^1.1.0",
+    "jquery": "^2.2.4"
+  }
+}
